@@ -6,6 +6,7 @@ This repo is being actively updated, and contributions in any form to make this 
 
 If you find this repo useful, please consider **★STARing** and feel free to share it with others! <br>
 
+**[Update: Mar, 2024]** Add new papers from ICLR-25. <br>
 **[Update: Nov, 2024]** Add new papers from ECCV-24 and NeurIPS-24. <br>
 **[Update: Sep, 2024]** Add new papers from ICML-24 and IJCAI-24. <br>
 **[Update: Jul, 2024]** Add new papers from CVPR-24. <br>
@@ -24,10 +25,11 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
   - [Overview](#overview)
   - [Survey](#survey)
   - [Transformer-based Models](#transformer-based-models)
-    - [Vision Transformers](#vision-transformers)
     - [Language Transformers](#language-transformers)
-  - [Convolutional Neural Networks](#convolutional-neural-networks)
+    - [Vision Transformers](#vision-transformers)
     - [Visual Generation](#visual-generation)
+  - [Convolutional Neural Networks](#convolutional-neural-networks)
+    - [Visual Generation](#visual-generation-1)
     - [Image Classification](#image-classification)
     - [Other Tasks](#other-tasks)
       - [Object Detection](#object-detection)
@@ -48,43 +50,10 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 
 
 ## Transformer-based Models
-### Vision Transformers
-- "CLAMP-ViT: Contrastive Data-Free Learning for Adaptive Post-Training Quantization of ViTs", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/8434_ECCV_2024_paper.php)] [**`PTQ`**]
-- "AdaLog: Post-Training Quantization for Vision Transformers with Adaptive Logarithm Quantizer", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3969_ECCV_2024_paper.php)]  [**`PTQ`**]
-- "PQ-SAM: Post-training Quantization for Segment Anything Model", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1627_ECCV_2024_paper.php)]  [**`PTQ`**]
-- "ERQ: Error Reduction for Post-Training Quantization of Vision Transformers", ICML, 2024. [[paper](https://openreview.net/forum?id=jKUWlgra9b)] [**`PTQ`**]
-- "Outlier-aware Slicing for Post-Training Quantization in Vision Transformer", ICML, 2024. [[paper](https://openreview.net/forum?id=Uh5XN9d2J4)] [**`PTQ`**]
-- "PTQ4SAM: Post-Training Quantization for Segment Anything", CVPR, 2024. [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Lv_PTQ4SAM_Post-Training_Quantization_for_Segment_Anything_CVPR_2024_paper.html)] [**`PTQ`**]
-- "Instance-Aware Group Quantization for Vision Transformers", CVPR, 2024. [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Moon_Instance-Aware_Group_Quantization_for_Vision_Transformers_CVPR_2024_paper.html)] [**`PTQ`**]
-- "Bi-ViT: Pushing the Limit of Vision Transformer Quantization", AAAI, 2024. [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/28109)] [**`Extreme`**]
-- "AQ-DETR: Low-Bit Quantized Detection Transformer with Auxiliary Queries", AAAI, 2024. [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/29487)]
-- "LRP-QViT: Mixed-Precision Vision Transformer Quantization via Layer-wise Relevance Propagation", arXiv, 2023. [[paper](http://arxiv.org/abs/2401.11243)] [**`PTQ`**] [**`MP`**] 
-- "MPTQ-ViT: Mixed-Precision Post-Training Quantization for Vision Transformer", arXiv, 2023. [[paper](http://arxiv.org/abs/2401.14895)] [**`PTQ`**] [**`MP`**] 
-- "I-ViT: Integer-only Quantization for Efficient Vision Transformer Inference", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_I-ViT_Integer-only_Quantization_for_Efficient_Vision_Transformer_Inference_ICCV_2023_paper.pdf)] [[code](https://github.com/zkkli/I-ViT)]
-- "RepQ-ViT: Scale Reparameterization for Post-Training Quantization of Vision Transformers", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_RepQ-ViT_Scale_Reparameterization_for_Post-Training_Quantization_of_Vision_Transformers_ICCV_2023_paper.pdf)] [[code](https://github.com/zkkli/RepQ-ViT)] [**`PTQ`**]
-- "QD-BEV: Quantization-aware View-guided Distillation for Multi-view 3D Object Detection", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_QD-BEV__Quantization-aware_View-guided_Distillation_for_Multi-view_3D_Object_Detection_ICCV_2023_paper.pdf)]
-- "BiViT: Extremely Compressed Binary Vision Transformers", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/He_BiViT_Extremely_Compressed_Binary_Vision_Transformers_ICCV_2023_paper.pdf)] [**`Extreme`**]
-- "Jumping through Local Minima: Quantization in the Loss Landscape of Vision Transformers", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Frumkin_Jumping_through_Local_Minima_Quantization_in_the_Loss_Landscape_of_ICCV_2023_paper.pdf)]
-- "PackQViT: Faster Sub-8-bit Vision Transformers via Full and Packed Quantization on the Mobile", NeurIPS, 2023. [[paper](https://neurips.cc/virtual/2023/poster/71880)]
-- "Oscillation-free Quantization for Low-bit Vision Transformers", ICML, 2023. [[paper](https://openreview.net/forum?id=DihXH24AdY)] [[code](https://github.com/nbasyl/OFQ)]
-- "PSAQ-ViT V2: Towards Accurate and General Data-Free Quantization for Vision Transformers", TNNLS, 2023. [[paper](https://arxiv.org/abs/2209.05687)] 
-- "Variation-aware Vision Transformer Quantization", arXiv, 2023. [[paper](http://arxiv.org/abs/2307.00331)]
-- "NoisyQuant: Noisy Bias-Enhanced Post-Training Activation Quantization for Vision Transformers", CVPR, 2023. [[paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_NoisyQuant_Noisy_Bias-Enhanced_Post-Training_Activation_Quantization_for_Vision_Transformers_CVPR_2023_paper.pdf)]  [**`PTQ`**]
-- "Boost Vision Transformer with GPU-Friendly Sparsity and Quantization", CVPR, 2023. [[paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Yu_Boost_Vision_Transformer_With_GPU-Friendly_Sparsity_and_Quantization_CVPR_2023_paper.pdf)] 
-- "Q-DETR: An Efficient Low-Bit Quantized Detection Transformer", CVPR, 2023. [[paper](http://openaccess.thecvf.com/content/CVPR2023/html/Xu_Q-DETR_An_Efficient_Low-Bit_Quantized_Detection_Transformer_CVPR_2023_paper.html)]
-- "Output Sensitivity-Aware DETR Quantization", 2023. [[paper](https://practical-dl.github.io/2023/extended_abstract/4/CameraReady/4.pdf)]
-- "Q-HyViT: Post-Training Quantization for Hybrid Vision Transformer with Bridge Block Reconstruction", arXiv, 2023. [[paper](https://arxiv.org/abs/2303.12557)]  [**`PTQ`**]
-- "Q-ViT: Accurate and Fully Quantized Low-bit Vision Transformer", NeurIPS, 2022. [[paper](https://openreview.net/forum?id=fU-m9kQe0ke)] [[code](https://github.com/yanjingli0202/q-vit)]
-- "Patch Similarity Aware Data-Free Quantization for Vision Transformers", ECCV, 2022. [[paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136710154.pdf)] [[code](https://github.com/zkkli/psaq-vit)]  [**`PTQ`**]
-- "PTQ4ViT: Post-Training Quantization for Vision Transformers with Twin Uniform Quantization", ECCV, 2022. [[paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136720190.pdf)] [[code](https://github.com/hahnyuan/ptq4vit)]  [**`PTQ`**]
-- "FQ-ViT: Post-Training Quantization for Fully Quantized Vision Transformer", IJCAI, 2022. [[paper](https://arxiv.org/abs/2111.13824)]  [[code](https://github.com/megvii-research/FQ-ViT)]  [**`PTQ`**]
-- "Q-ViT: Fully Differentiable Quantization for Vision Transformer", arXiv, 2022. [[paper](https://arxiv.org/pdf/2201.07703.pdf)]
-- "Post-Training Quantization for Vision Transformer", NeurIPS, 2021. [[paper](https://openreview.net/forum?id=9TX5OsKJvm)]  [**`PTQ`**]
-
-
-[[Back to Overview](#overview)]
-
 ### Language Transformers
+- "CBQ: Cross-Block Quantization for Large Language Models", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/28924)]
+- "SpinQuant: LLM Quantization with Learned Rotations", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/28338)]
+- "LeanQuant: Accurate and Scalable Large Language Model Quantization with Loss-error-aware Grid", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/30168)]
 - "Q-VLM: Post-training Quantization for Large Vision-Language Models", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/94107)]
 - "KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/96936)]
 - "QBB: Quantization with Binary Bases for LLMs", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/95634)]
@@ -190,10 +159,53 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 
 [[Back to Overview](#overview)]
 
+### Vision Transformers
+- "CLAMP-ViT: Contrastive Data-Free Learning for Adaptive Post-Training Quantization of ViTs", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/8434_ECCV_2024_paper.php)] [**`PTQ`**]
+- "AdaLog: Post-Training Quantization for Vision Transformers with Adaptive Logarithm Quantizer", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3969_ECCV_2024_paper.php)]  [**`PTQ`**]
+- "PQ-SAM: Post-training Quantization for Segment Anything Model", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1627_ECCV_2024_paper.php)]  [**`PTQ`**]
+- "ERQ: Error Reduction for Post-Training Quantization of Vision Transformers", ICML, 2024. [[paper](https://openreview.net/forum?id=jKUWlgra9b)] [**`PTQ`**]
+- "Outlier-aware Slicing for Post-Training Quantization in Vision Transformer", ICML, 2024. [[paper](https://openreview.net/forum?id=Uh5XN9d2J4)] [**`PTQ`**]
+- "PTQ4SAM: Post-Training Quantization for Segment Anything", CVPR, 2024. [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Lv_PTQ4SAM_Post-Training_Quantization_for_Segment_Anything_CVPR_2024_paper.html)] [**`PTQ`**]
+- "Instance-Aware Group Quantization for Vision Transformers", CVPR, 2024. [[paper](https://openaccess.thecvf.com/content/CVPR2024/html/Moon_Instance-Aware_Group_Quantization_for_Vision_Transformers_CVPR_2024_paper.html)] [**`PTQ`**]
+- "Bi-ViT: Pushing the Limit of Vision Transformer Quantization", AAAI, 2024. [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/28109)] [**`Extreme`**]
+- "AQ-DETR: Low-Bit Quantized Detection Transformer with Auxiliary Queries", AAAI, 2024. [[paper](https://ojs.aaai.org/index.php/AAAI/article/view/29487)]
+- "LRP-QViT: Mixed-Precision Vision Transformer Quantization via Layer-wise Relevance Propagation", arXiv, 2023. [[paper](http://arxiv.org/abs/2401.11243)] [**`PTQ`**] [**`MP`**] 
+- "MPTQ-ViT: Mixed-Precision Post-Training Quantization for Vision Transformer", arXiv, 2023. [[paper](http://arxiv.org/abs/2401.14895)] [**`PTQ`**] [**`MP`**] 
+- "I-ViT: Integer-only Quantization for Efficient Vision Transformer Inference", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_I-ViT_Integer-only_Quantization_for_Efficient_Vision_Transformer_Inference_ICCV_2023_paper.pdf)] [[code](https://github.com/zkkli/I-ViT)]
+- "RepQ-ViT: Scale Reparameterization for Post-Training Quantization of Vision Transformers", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_RepQ-ViT_Scale_Reparameterization_for_Post-Training_Quantization_of_Vision_Transformers_ICCV_2023_paper.pdf)] [[code](https://github.com/zkkli/RepQ-ViT)] [**`PTQ`**]
+- "QD-BEV: Quantization-aware View-guided Distillation for Multi-view 3D Object Detection", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_QD-BEV__Quantization-aware_View-guided_Distillation_for_Multi-view_3D_Object_Detection_ICCV_2023_paper.pdf)]
+- "BiViT: Extremely Compressed Binary Vision Transformers", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/He_BiViT_Extremely_Compressed_Binary_Vision_Transformers_ICCV_2023_paper.pdf)] [**`Extreme`**]
+- "Jumping through Local Minima: Quantization in the Loss Landscape of Vision Transformers", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Frumkin_Jumping_through_Local_Minima_Quantization_in_the_Loss_Landscape_of_ICCV_2023_paper.pdf)]
+- "PackQViT: Faster Sub-8-bit Vision Transformers via Full and Packed Quantization on the Mobile", NeurIPS, 2023. [[paper](https://neurips.cc/virtual/2023/poster/71880)]
+- "Oscillation-free Quantization for Low-bit Vision Transformers", ICML, 2023. [[paper](https://openreview.net/forum?id=DihXH24AdY)] [[code](https://github.com/nbasyl/OFQ)]
+- "PSAQ-ViT V2: Towards Accurate and General Data-Free Quantization for Vision Transformers", TNNLS, 2023. [[paper](https://arxiv.org/abs/2209.05687)] 
+- "Variation-aware Vision Transformer Quantization", arXiv, 2023. [[paper](http://arxiv.org/abs/2307.00331)]
+- "NoisyQuant: Noisy Bias-Enhanced Post-Training Activation Quantization for Vision Transformers", CVPR, 2023. [[paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_NoisyQuant_Noisy_Bias-Enhanced_Post-Training_Activation_Quantization_for_Vision_Transformers_CVPR_2023_paper.pdf)]  [**`PTQ`**]
+- "Boost Vision Transformer with GPU-Friendly Sparsity and Quantization", CVPR, 2023. [[paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Yu_Boost_Vision_Transformer_With_GPU-Friendly_Sparsity_and_Quantization_CVPR_2023_paper.pdf)] 
+- "Q-DETR: An Efficient Low-Bit Quantized Detection Transformer", CVPR, 2023. [[paper](http://openaccess.thecvf.com/content/CVPR2023/html/Xu_Q-DETR_An_Efficient_Low-Bit_Quantized_Detection_Transformer_CVPR_2023_paper.html)]
+- "Output Sensitivity-Aware DETR Quantization", 2023. [[paper](https://practical-dl.github.io/2023/extended_abstract/4/CameraReady/4.pdf)]
+- "Q-HyViT: Post-Training Quantization for Hybrid Vision Transformer with Bridge Block Reconstruction", arXiv, 2023. [[paper](https://arxiv.org/abs/2303.12557)]  [**`PTQ`**]
+- "Q-ViT: Accurate and Fully Quantized Low-bit Vision Transformer", NeurIPS, 2022. [[paper](https://openreview.net/forum?id=fU-m9kQe0ke)] [[code](https://github.com/yanjingli0202/q-vit)]
+- "Patch Similarity Aware Data-Free Quantization for Vision Transformers", ECCV, 2022. [[paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136710154.pdf)] [[code](https://github.com/zkkli/psaq-vit)]  [**`PTQ`**]
+- "PTQ4ViT: Post-Training Quantization for Vision Transformers with Twin Uniform Quantization", ECCV, 2022. [[paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136720190.pdf)] [[code](https://github.com/hahnyuan/ptq4vit)]  [**`PTQ`**]
+- "FQ-ViT: Post-Training Quantization for Fully Quantized Vision Transformer", IJCAI, 2022. [[paper](https://arxiv.org/abs/2111.13824)]  [[code](https://github.com/megvii-research/FQ-ViT)]  [**`PTQ`**]
+- "Q-ViT: Fully Differentiable Quantization for Vision Transformer", arXiv, 2022. [[paper](https://arxiv.org/pdf/2201.07703.pdf)]
+- "Post-Training Quantization for Vision Transformer", NeurIPS, 2021. [[paper](https://openreview.net/forum?id=9TX5OsKJvm)]  [**`PTQ`**]
+
+
+[[Back to Overview](#overview)]
+
+### Visual Generation
+- "SVDQuant: Absorbing Outliers by Low-Rank Component for 4-Bit Diffusion Models", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/27906)]
+- "ViDiT-Q: Efficient and Accurate Quantization of Diffusion Transformers for Image and Video Generation", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/30429)]
+- "DGQ: Distribution-Aware Group Quantization for Text-to-Image Diffusion Models", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/29192)]
+- "PTQ4DiT: Post-training Quantization for Diffusion Transformers", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/95445)] [**`PTQ`**]
+
+[[Back to Overview](#overview)]
+
 ## Convolutional Neural Networks
 ### Visual Generation
 - "BiDM: Pushing the Limit of Quantization for Diffusion Models", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/93620)]
-- "PTQ4DiT: Post-training Quantization for Diffusion Transformers", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/95445)] [**`PTQ`**]
 - "BitsFusion: 1.99 bits Weight Quantization of Diffusion Model", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/96909)]
 - "Timestep-Aware Correction for Quantized Diffusion Models", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/8312_ECCV_2024_paper.php)]
 - "Post-training Quantization with Progressive Calibration and Activation Relaxing for Text-to-Image Diffusion Models", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7353_ECCV_2024_paper.php)]  [**`PTQ`**]
@@ -213,6 +225,8 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 - "Q-diffusion: Quantizing Diffusion Models", ICCV, 2023. [[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Q-Diffusion_Quantizing_Diffusion_Models_ICCV_2023_paper.pdf)] [[code](https://github.com/Xiuyu-Li/q-diffusion)] [**`PTQ`**]
 - "Towards Accurate Data-free Quantization for Diffusion Models", arXiv, 2023. [[paper](http://arxiv.org/abs/2305.18723)] [**`PTQ`**]
 - "Post-training Quantization on Diffusion Models", CVPR, 2023. [[paper](http://openaccess.thecvf.com/content/CVPR2023/html/Shang_Post-Training_Quantization_on_Diffusion_Models_CVPR_2023_paper.html)] [[code](https://https//github.com/42Shawn/PTQ4DM)] [**`PTQ`**]
+
+[[Back to Overview](#overview)]
 
 ### Image Classification
 - "MetaAug: Meta-Data Augmentation for Post-Training Quantization", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3914_ECCV_2024_paper.php)]
@@ -334,6 +348,7 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 - "BiDet: An Efficient Binarized Object Detector", CVPR, 2020. [[paper](https://arxiv.org/abs/2003.03961)] [[code](https://github.com/ZiweiWangTHU/BiDet)] [**`Extreme`**]
 - "Fully Quantized Network for Object Detection", CVPR, 2019. [[paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Li_Fully_Quantized_Network_for_Object_Detection_CVPR_2019_paper.pdf)]
 
+[[Back to Overview](#overview)]
 
 #### Super Resolution
 - "Towards Robust Full Low-bit Quantization of Super Resolution Networks", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9567_ECCV_2024_paper.php)] [**`PTQ`**]
@@ -348,6 +363,8 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 - "Fully Quantized Image Super-Resolution Networks", ACM MM, 2021. [[paper](https://arxiv.org/abs/2011.14265)] [[code](https://github.com/billhhh/FQSR)]
 - "PAMS: Quantized Super-Resolution via Parameterized Max Scale", ECCV, 2020. [[paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123700562.pdf)] [[code](https://github.com/colorjam/PAMS)]
 - "Training Binary Neural Network without Batch Normalization for Image Super-Resolution", AAAI, 2021. [[paper](https://ojs.aaai.org/index.php/AAAI/article/download/16263/16070)] [**`Extreme`**]
+
+[[Back to Overview](#overview)]
 
 #### Point Cloud
 - "LiDAR-PTQ: Post-Training Quantization for Point Cloud 3D Object Detection", ICLR, 2024. [[paper](https://openreview.net/forum?id=0d1gQI114C)]  [**`PTQ`**]
