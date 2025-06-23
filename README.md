@@ -6,7 +6,8 @@ This repo is being actively updated, and contributions in any form to make this 
 
 If you find this repo useful, please consider **★STARing** and feel free to share it with others! <br>
 
-**[Update: Mar, 2024]** Add new papers from ICLR-25. <br>
+**[Update: Jun, 2025]** Add new papers from CVPR-25. <br>
+**[Update: Mar, 2025]** Add new papers from ICLR-25. <br>
 **[Update: Nov, 2024]** Add new papers from ECCV-24 and NeurIPS-24. <br>
 **[Update: Sep, 2024]** Add new papers from ICML-24 and IJCAI-24. <br>
 **[Update: Jul, 2024]** Add new papers from CVPR-24. <br>
@@ -51,6 +52,7 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 
 ## Transformer-based Models
 ### Language Transformers
+- "MBQ: Modality-Balanced Quantization for Large Vision-Language Models", CVPR, 2025. [[paper](https://cvpr.thecvf.com/virtual/2025/poster/33438)] [**`PTQ`**]
 - "CBQ: Cross-Block Quantization for Large Language Models", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/28924)]
 - "SpinQuant: LLM Quantization with Learned Rotations", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/28338)]
 - "LeanQuant: Accurate and Scalable Large Language Model Quantization with Loss-error-aware Grid", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/30168)]
@@ -160,6 +162,8 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 [[Back to Overview](#overview)]
 
 ### Vision Transformers
+- "FIMA-Q: Post-Training Quantization for Vision Transformers by Fisher Information Matrix Approximation", CVPR, 2025. [[paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Wu_FIMA-Q_Post-Training_Quantization_for_Vision_Transformers_by_Fisher_Information_Matrix_CVPR_2025_paper.pdf)] [**`PTQ`**]
+- "APHQ-ViT: Post-Training Quantization with Average Perturbation Hessian Based Reconstruction for Vision Transformers", CVPR, 2025. [[paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Wu_APHQ-ViT_Post-Training_Quantization_with_Average_Perturbation_Hessian_Based_Reconstruction_for_CVPR_2025_paper.pdf)] [**`PTQ`**]
 - "CLAMP-ViT: Contrastive Data-Free Learning for Adaptive Post-Training Quantization of ViTs", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/8434_ECCV_2024_paper.php)] [**`PTQ`**]
 - "AdaLog: Post-Training Quantization for Vision Transformers with Adaptive Logarithm Quantizer", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3969_ECCV_2024_paper.php)]  [**`PTQ`**]
 - "PQ-SAM: Post-training Quantization for Segment Anything Model", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1627_ECCV_2024_paper.php)]  [**`PTQ`**]
@@ -196,6 +200,7 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 [[Back to Overview](#overview)]
 
 ### Visual Generation
+- "Q-DiT: Accurate Post-Training Quantization for Diffusion Transformers", CVPR, 2025. [[paper](https://cvpr.thecvf.com/virtual/2025/poster/34979)] [**`PTQ`**]
 - "SVDQuant: Absorbing Outliers by Low-Rank Component for 4-Bit Diffusion Models", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/27906)]
 - "ViDiT-Q: Efficient and Accurate Quantization of Diffusion Transformers for Image and Video Generation", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/30429)]
 - "DGQ: Distribution-Aware Group Quantization for Text-to-Image Diffusion Models", ICLR, 2025. [[paper](https://iclr.cc/virtual/2025/poster/29192)]
@@ -205,6 +210,7 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 
 ## Convolutional Neural Networks
 ### Visual Generation
+- "Pioneering 4-Bit FP Quantization for Diffusion Models: Mixup-Sign Quantization and Timestep-Aware Fine-Tuning", CVPR, 2025. [[paper](https://cvpr.thecvf.com/virtual/2025/poster/34497)] [**`Non-uniform`**]
 - "BiDM: Pushing the Limit of Quantization for Diffusion Models", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/93620)]
 - "BitsFusion: 1.99 bits Weight Quantization of Diffusion Model", NeurIPS, 2024. [[paper](https://nips.cc/virtual/2024/poster/96909)]
 - "Timestep-Aware Correction for Quantized Diffusion Models", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/8312_ECCV_2024_paper.php)]
@@ -229,6 +235,8 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 [[Back to Overview](#overview)]
 
 ### Image Classification
+- "Enhancing Diversity for Data-free Quantization", CVPR, 2025. [[paper](https://cvpr.thecvf.com/virtual/2025/poster/33597)] [**`PTQ`**]
+- "Automatic Joint Structured Pruning and Quantization for Efficient Neural Network Training and Compression", CVPR, 2025. [[paper](https://cvpr.thecvf.com/virtual/2025/poster/34889)] [**`MP`**]
 - "MetaAug: Meta-Data Augmentation for Post-Training Quantization", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3914_ECCV_2024_paper.php)]
 - "Sharpness-Aware Data Generation for Zero-shot Quantization", ICML, 2024. [[paper](https://openreview.net/forum?id=8mKXMnhnFW)]
 - "A2Q+: Improving Accumulator-Aware Weight Quantization", ICML, 2024. [[paper](https://openreview.net/forum?id=mbx2pLK5Eq)]
@@ -351,6 +359,7 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 [[Back to Overview](#overview)]
 
 #### Super Resolution
+- "PassionSR: Post-Training Quantization with Adaptive Scale in One-Step Diffusion based Image Super-Resolution", CVPR, 2025. [[paper](https://cvpr.thecvf.com/virtual/2025/poster/32866)] [**`PTQ`**]
 - "Towards Robust Full Low-bit Quantization of Super Resolution Networks", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9567_ECCV_2024_paper.php)] [**`PTQ`**]
 - "Overcoming Distribution Mismatch in Quantizing Image Super-Resolution Networks", ECCV, 2024. [[paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/2121_ECCV_2024_paper.php)]
 - "QuantSR: Accurate Low-bit Quantization for Efficient Image Super-Resolution", NeurIPS, 2023. [[paper](https://neurips.cc/virtual/2023/poster/72890)]
@@ -367,6 +376,7 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 [[Back to Overview](#overview)]
 
 #### Point Cloud
+- "PillarHist: A Quantization-aware Pillar Feature Encoder based on Height-aware Histogram", CVPR, 2025. [[paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Zhou_PillarHist_A_Quantization-aware_Pillar_Feature_Encoder_based_on_Height-aware_Histogram_CVPR_2025_paper.pdf)] [**`PTQ`**]
 - "LiDAR-PTQ: Post-Training Quantization for Point Cloud 3D Object Detection", ICLR, 2024. [[paper](https://openreview.net/forum?id=0d1gQI114C)]  [**`PTQ`**]
 - "Binarizing Sparse Convolutional Networks for Efficient Point Cloud Analysis", arXiv, 2023. [[paper](https://arxiv.org/abs/2303.15493)] [**`Extreme`**]
 - "BiPointNet: Binary Neural Network for Point Clouds", ICLR, 2021. [[paper](https://openreview.net/forum?id=9QLRCVysdlO)]  [[code](https://github.com/htqin/BiPointNet)] [**`Extreme`**]
