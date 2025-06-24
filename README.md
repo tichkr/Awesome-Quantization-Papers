@@ -94,7 +94,6 @@ If you find this repo useful, please consider **★STARing** and feel free to sh
 - "EdgeQAT: Entropy and Distribution Guided Quantization-Aware Training for the Acceleration of Lightweight LLMs on the Edge", arXiv, 2024. [[paper](http://arxiv.org/abs/2402.10787)]
 - "RepQuant: Towards Accurate Post-Training Quantization of Large Transformer Models via Scale Reparameterization", arXiv, 2024. [[paper](http://arxiv.org/abs/2402.05628)]
 - "Accurate LoRA-Finetuning Quantization of LLMs via Information Retention", arXiv, 2024. [[paper](http://arxiv.org/abs/2402.05445)]
-- "KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization", arXiv, 2023. [[paper](http://arxiv.org/abs/2401.18079)]
 - "Extreme Compression of Large Language Models via Additive Quantization", arXiv, 2023. [[paper](http://arxiv.org/abs/2401.06118)]
 - "ZeroQuant(4+2): Redefining LLMs Quantization with a New FP6-Centric Strategy for Diverse Generative Tasks", arXiv, 2023. [[paper](http://arxiv.org/abs/2312.08583)] [**`PTQ`**]
 - "CBQ: Cross-Block Quantization for Large Language Models", arXiv, 2023. [[paper](http://arxiv.org/abs/2312.07950)] [**`PTQ`**]
